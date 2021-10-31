@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My-Notes</title>
+
+    <style>
+      body {
+        background-color: rgb(221, 182, 123);
+      }
+
+      header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* margin-left: 33%; */
+      }
+
+      .topheading {
+        font-weight: 550;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .abc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-color: rgb(0, 0, 0);
+        border-style: solid;
+        padding: 10%;
+        border-radius: 10px;
+        -webkit-box-shadow: inset -1px 2px 6px 3px #242629,
+          2px 2px 11px 0px #292e35, 2px 4px 10px 2px rgba(0, 0, 0, 0);
+        box-shadow: inset -1px 1px 5px 3px #2a2e33, 2px 2px 11px 0px #0b325e,
+          3px 3px 10px 3px rgba(0, 0, 0, 0);
+        background-color: #3369a7;
+      }
+      form textarea {
+        width: 100%;
+        /* height: 4.8rem; */
+        /* border-radius: 8px; */
+      }
+
+      form * {
+        margin-bottom: 5%;
+      }
+
+      #add-btn {
+        background-color: rgb(170, 29, 128);
+        border-radius: 5px;
+        width: 100%;
+        height: 2rem;
+      }
+
+      #add-btn:hover {
+        background-color: rgb(189, 93, 189);
+        cursor: pointer;
+      }
+
+      .note-btn {
+        background-color: rgb(170, 29, 128);
+        border-radius: 5px;
+        font-size: 1.6rem;
+        margin-bottom: 2%;
+      }
+
+      .note-btn:hover {
+        background-color: rgb(172, 119, 156);
+        cursor: pointer;
+      }
+
+      .dev {
+        text-align: center;
+        font-weight: 550;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2rem;
+      }
+
+      .sss {
+        /* padding-left: 2%; */
+        text-align: center;
+        background-color: rgb(125, 119, 172);
+        margin-bottom: 5%;
+        width: 50%;
+        margin: auto;
+        overflow: auto;
+        border-radius: 10px;
+        -webkit-box-shadow: inset -1px 3px 8px 5px #242629,
+          2px 5px 16px 0px #292e35, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+        box-shadow: inset -1px 3px 8px 5px #2a2e33, 2px 5px 16px 0px #0b325e,
+          5px 5px 15px 5px rgba(0, 0, 0, 0);
+      }
+
+      .note-counter {
+        font-weight: 600;
+        text-align: center;
+        font-size: 2rem;
+      }
+      .note-title {
+        font-size: 3rem;
+      }
+      .note-text {
+        font-size: 2.4rem;
+      }
+      #notes {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+
+      #note-text {
+        height: 4.8rem;
+        font-size: 1rem;
+      }
+      #note-title {
+        width: 100%;
+        height: 3rem;
+        font-size: 1rem;
+        /* border-radius: 8px; */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container abc">
+        <h1 class="topheading">My Notes</h1>
+
+        <form action="">
+          <input type="text" id="note-title" placeholder="Note title" />
+          <textarea name="" id="note-text" placeholder="Note detail"></textarea>
+          <button id="add-btn">Add Notes</button>
+        </form>
+      </div>
+    </header>
+
+    <section>
+      <div class="container2">
+        <h2 class="dev">Your Notes</h2>
+        <hr />
+
+        <div id="notes">
+          <!-- <div id="note">
+                <p class="note-counter">
+                   Your Note1
+                </p>
+                <div class="sss"> 
+                <h3 class="note-title">
+                    Hello world
+                </h3>
+
+                <p class="note-text">
+                    Some note next
+                </p>
+
+                <button class="note-btn">Delete Note</button>
+                <button class="note-btn">Edit Note</button>
+            </div >
+            </div> -->
+        </div>
+      </div>
+    </section>
+
+    <script src="notes.js"></script>
+  </body>
+</html>

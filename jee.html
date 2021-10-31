@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello, world!</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family= Fruktur|Sofia|Trirong"
+    />
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      btn {
+        background-color: rgb(173, 147, 62);
+      }
+      .syllabus {
+        background-color: rgb(196 131 212 / 75%);
+      }
+      .total {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .dev {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      /* .syllabus1{
+             width: 33%;
+         } */
+
+      #Exampattern,
+      th,
+      td {
+        border-collapse: collapse;
+        border: 1px solid black;
+        font-size: 1.3vw;
+      }
+
+      .s1 {
+        text-align: center;
+        padding: 10px;
+        font-size: x-large;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 800;
+      }
+
+      .s2 {
+        margin: 15px;
+        padding: 15px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      .accordion-body {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 3%;
+        justify-content: center;
+        /* background-color:  rgb(191 132 206 / 68%); */
+        background-color: rgb(196 131 212 / 75%);
+        height: 100%;
+      }
+
+      .container {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        border: 2px solid rgb(155, 162, 223);
+        background-color: #e2edf3;
+        border-radius: 10px;
+        -webkit-box-shadow: inset -1px 3px 8px 5px #242629,
+          2px 5px 16px 0px #292e35, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+        box-shadow: inset -1px 3px 8px 5px #2a2e33, 2px 5px 16px 0px #0b325e,
+          5px 5px 15px 5px rgba(0, 0, 0, 0);
+      }
+
+      p {
+        margin: 10px;
+        padding: 10px;
+      }
+
+      .accordion-button {
+        font-size: large;
+        background-color: #7297ab;
+      }
+
+      .mainadv {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: top;
+        justify-content: center;
+        padding: 2px 10px;
+      }
+
+      .card-title {
+        text-align: center;
+        font-size: 2vw;
+      }
+      .btx {
+        background-color: #3b6780;
+        border-color: #3b6780;
+        color: white;
+      }
+      .card {
+        /* border: 2px solid black; */
+        /* background-image: linear-gradient(
+        185deg, hsl(240, 86%, 14%), #02232400); */
+        background-color: rgb(201, 142, 196);
+        border-radius: 20px;
+        margin: 10px;
+      }
+      .card-text {
+        text-align: center;
+      }
+      .card-img-top {
+        width: 100%;
+
+        border-radius: 20px;
+        padding: 2px;
+      }
+
+      .boxShadow {
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+        min-height: 600px;
+      }
+
+      .boxShadow:hover {
+        /* transform: translateY(10px); */
+        /* transform: translate(10px); */
+        transform: scale(1.02);
+        overflow: visible;
+        /* box-shadow: -5px -5px rgb(193, 168, 201); */
+        background-color: rgb(218, 148, 240);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="s1">Joint Entrance Examination(JEE)</div>
+      <div class="s2">
+        The Joint Entrance Examination (JEE) is an engineering entrance
+        assessment conducted for admission to various engineering colleges in
+        India. It is constituted by two different examinations: the JEE Main and
+        the JEE Advanced.
+        <br />
+        The Joint Seat Allocation Authority (JoSAA) conducts the joint admission
+        process for a total of 23 Indian Institute of Technology campuses, 31
+        National Institute of Technology campuses, 25 Indian Institute of
+        Information Technology campuses and 19 other Government Funded Technical
+        Institutes (GFTIs) based on the rank obtained by a student in JEE Mains
+        and JEE Advanced.
+      </div>
+
+      <div class="accordion" id="accordionExample">
+        <div class="mainadv">
+          <div class="card boxShadow" style="width: 25rem">
+            <img src="dev2.jpg" class="card-img-top imgtop" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">JEE-Main</h5>
+              <p class="card-text">
+                JEE Main is being conducted by National Testing Agency (NTA).
+                JEE Main has two papers, Paper-I and Paper-II. Candidates may
+                opt for either or both of them. Both papers contain multiple
+                choice questions. Paper-I is for admission to B.E./B.Tech
+                courses and is conducted in a Computer Based Test mode. Paper-II
+                is for admission in B.Arch and B.Planning courses and will also
+                be conducted in Computer Based Test mode except for one paper,
+                namely the 'Drawing Test' which shall be conducted in Pen and
+                Paper mode or offline mode. From January 2020 an additional
+                Paper - III is being introduced for B.Planning courses
+                separately
+              </p>
+              <a
+                href="https://jeemain.nta.nic.in/webinfo2021/Page/Page?PageId=1&LangId=P"
+                class="btn btx btn-primary"
+                target="blank"
+                >official website</a
+              >
+            </div>
+          </div>
+
+          <div class="card boxShadow" style="width: 25rem">
+            <img src="images (1).jpg" class="card-img-top imgtop" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">JEE-Advanced</h5>
+              <p class="card-text">
+                JEE Advanced exam is conducted for entry into 23 IIT's and some
+                other prestigious universities like IISC Bangalore, IIST
+                Thiruvananthapuram, etc.This exam is conducted by any one of the
+                IIT's every year. In 2020 the exam was conducted by IIT Delhi.
+                In 2021, 2022, 2023 it shall be conducted by IIT Kharagpur, IIT
+                Bombay and IIT Guwahati respectively. More than 2 lakh students
+                become eligible to write JEE Advanced every year. The students
+                who qualify the JEE-Main exam become eligible for the
+                JEE-Advanced examination.
+              </p>
+              <a
+                href="https://jeeadv.ac.in/"
+                class="btn btx btn-primary"
+                target="blank"
+                >official website</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne1">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne1"
+              aria-expanded="true"
+              aria-controls="collapseOne1"
+            >
+              Exam Pattern
+            </button>
+          </h2>
+          <div
+            id="collapseOne1"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingOne1"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div>
+                Paper comprises objective type questions based on Physics,
+                Chemistry and Math.
+              </div>
+
+              <div>
+                The table below lists the marking scheme of paper -
+                (B.E/B.Tech):
+              </div>
+
+              <table id="Exampattern">
+                <thead>
+                  <tr>
+                    <th>Name of the Subject</th>
+                    <th>Number of Questions</th>
+                    <th>Marks</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Physics</td>
+                    <td>
+                      30 (20 MCQs + 10 Numericals of which 5 Numericals are to
+                      be answered)
+                    </td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td>Chemistry</td>
+                    <td>
+                      30 (20 MCQs + 10 Numericals of which 5 Numericals are to
+                      be answered)
+                    </td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td>Maths</td>
+                    <td>
+                      30 (20 MCQs + 10 Numericals of which 5 Numericals are to
+                      be answered)
+                    </td>
+                    <td>100</td>
+                  </tr>
+
+                  <tr>
+                    <td>Total</td>
+                    <td>90 (60 MCQs + 15 Numerical Questions to answered)</td>
+                    <td>300</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div>
+                Maximum duration allotted for answering Paper I is 3 hours (4
+                hours for Persons with Benchmark Disabilities).
+              </div>
+              <div>Paper for JEE Mains is fully computer-based.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne2">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne2"
+              aria-expanded="true"
+              aria-controls="collapseOne2"
+            >
+              JEE preparation Tips
+            </button>
+          </h2>
+          <div
+            id="collapseOne2"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingOne2"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div>
+                Below we have mentioned general preparation tips for JEE Main.
+              </div>
+
+              <ul>
+                <li>
+                  Spend more time on areas that you’re weak in. To get a hold of
+                  the concept, practice regularly and stay updated.
+                </li>
+                <li>
+                  Do not skip any topic that you feel is not up to your task or
+                  is unnecessary.
+                </li>
+                <li>
+                  Make short notes of formulas, concepts, pointers and important
+                  chapters.
+                </li>
+                <li>Self-evaluate regularly as per your comfort.</li>
+                <li>Have a positive mindset and stay motivated.</li>
+                <li>
+                  Stay healthy and fit both mentally and physically. Eat good
+                  food, rest well and remove any stress by engaging yourself in
+                  some fun activities.
+                </li>
+                <li>
+                  Practice till you are perfect using mock tests and previous
+                  year papers<
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo3">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo3"
+              aria-expanded="false"
+              aria-controls="collapseTwo3"
+            >
+              How to handle stress during JEE preparation?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo3"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo3"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>Indulge in Yoga or Physical Activities</li>
+                <li>Take Breaks in Between</li>
+                <li>Eat a Balanced Diet & Get Proper Sleep</li>
+                <li>Avoid Interacting with Stressed Peers</li>
+                <li>Talk to Your Parents, Friends, or Teachers</li>
+                <li>
+                  Connect with your community- or faith-based organizations.
+                </li>
+                <li>
+                  Set limits appropriately and say no to requests that would
+                  create excessive stress in your life.
+                </li>
+                <li>Avoid drugs and alcohol.</li>
+                <li>Make time for hobbies and interests</li>
+                <li>Accept that there are events that you cannot control.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              How to stay motivated during JEE preparation?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>
+                  Don’t just study to get marks but to gain better knowledge.
+                </li>
+                <li>
+                  One reason could be that you have some backlogs and it’s
+                  giving you anxiety. It’s better to clear your backlogs.
+                </li>
+                <li>Don’t go through everything just important topics.</li>
+                <li>
+                  Learn from some advanced-level sources along with NCERT. They
+                  always cover the basics.
+                </li>
+                <li>Work smarter not harder.</li>
+
+                <li>Learn to manage your time more effectively.</li>
+                <li>
+                  Be assertive instead of aggressive. Assert your feelings,
+                  opinions, or beliefs instead of becoming angry, defensive, or
+                  passive.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="total">
+        <p>
+          <a
+            class="btn btx syll"
+            data-bs-toggle="collapse"
+            href="#collapseExample1"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Syllabus
+          </a>
+          <!-- <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Button with data-bs-target
+        </button> -->
+        </p>
+      </div>
+
+      <div class="collapse" id="collapseExample1">
+        <div class="accordion dev" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item syllabus">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                physic
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>Physics and measurement</li>
+                  <li>Rotational motion</li>
+                  <li>Thermodynamics</li>
+                  <li>Kinematics</li>
+                  <li>Laws of motion</li>
+                  <li>Friction</li>
+                  <li>Work, energy and power</li>
+                  <li>Center of mass</li>
+                  <li>Properties of solids and liquids</li>
+                  <li>Gravitation</li>
+
+                  <li>Oscillations and waves</li>
+                  <li>Electronic devices</li>
+                  <li>Thermodynamics</li>
+                  <li>Kinetic theory of gases</li>
+                  <li>Current electricity</li>
+                  <li>Communication systems</li>
+                  <li>Electromagnetic induction and alternating currents</li>
+                  <li>Magnetic effects of current and magnetism</li>
+                  <li>Optics</li>
+                  <li>Modern Physics</li>
+                  <li>Electromagnetic waves</li>
+                  <li>Atoms and nuclei</li>
+                  <li>Electrostatics</li>
+                  <li>Dual nature of matter and radiation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item syllabus1">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo"
+              >
+                Chemistry
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingTwo"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>Some basic concepts in chemistry</li>
+                  <li>States of matter</li>
+                  <li>Atomic structure</li>
+                  <li>Chemical bonding and molecular structure</li>
+                  <li>Chemical thermodynamics</li>
+                  <li>Solutions</li>
+                  <li>Equilibrium</li>
+                  <li>Redox reactions and electrochemistry</li>
+                  <li>Chemical kinetics</li>
+                  <li>Surface chemistry</li>
+                  <li>Hydrocarbons</li>
+                  <li>Chemistry in everyday life</li>
+                  <li>Principles related to practical chemistry</li>
+                  <li>
+                    Organic compounds containing halogens, oxygen and nitrogen
+                  </li>
+                  <li>Polymers and Biomolecules</li>
+                  <li>Some basic principles of organic chemistry</li>
+
+                  <li>
+                    Classification of elements and periodicity in properties
+                  </li>
+                  <li>Hydrogen</li>
+                  <li>Block elements (alkali and alkaline earth metals)</li>
+                  <li>P Block elements group 13 to group 18 elements</li>
+                  <li>d- and f - block elements</li>
+                  <li>Co-ordination compounds</li>
+                  <li>Environmental chemistry</li>
+                  <li>
+                    General principles and processes of isolation of metals
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item syllabus1">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree"
+              >
+                Maths
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingThree"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>Complex numbers and quadratic equations</li>
+                  <li>Matrices and determinants</li>
+                  <li>Sets, relations and functions</li>
+                  <li>Mathematical induction</li>
+                  <li>Permutations and combinations</li>
+                  <li>Mathematical reasoning</li>
+                  <li>Limit, continuity and differentiability</li>
+                  <li>Integral calculus</li>
+                  <li>Three-dimensional geometry</li>
+                  <li>Differential equations</li>
+                  <li>Binomial theorem and its simple applications</li>
+                  <li>Sequence and Series</li>
+                  <li>Vector algebra</li>
+                  <li>Statistics and probability</li>
+                  <li>Trigonometry</li>
+                  <li>Co-ordinate geometry</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        <a
+          class="btn btx btr"
+          data-bs-toggle="collapse"
+          href="#collapseExample"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          Books to refer
+        </a>
+        <!-- <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Button with data-bs-target
+        </button> -->
+      </p>
+
+      <div class="collapse" id="collapseExample">
+        <div class="accordion dev" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item syllabus1">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne1">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne1"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne1"
+              >
+                Best Books for JEE physic
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne1"
+              class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne1"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>Concepts of Physics by H. C. Verma</li>
+                  <li>Understanding Physics by DC Pandey</li>
+                  <li>
+                    Practice Book Physics for JEE Main and Advanced by DC Pandey
+                  </li>
+                  <li>
+                    Wiley's Halliday / Resnick / Walker Physics for JEE (Main &
+                    Advanced) by Halliday, Resnick and Walker
+                  </li>
+                  <li>Problems in General Physics by I. E. Irodov</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item syllabus1">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo2">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo2"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo2"
+              >
+                Best Books for JEE Chemistry
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseTwo2"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingTwo2"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>NCERT Textbook</li>
+                  <li>
+                    Problems in Physical Chemistry for JEE (Main & Advanced) by
+                    Narendra Awasthi
+                  </li>
+                  <li>
+                    Organic Chemistry by Morrison and Boyd for Organic Chemistry
+                  </li>
+                  <li>
+                    Concise Inorganic Chemistry by J. D. Lee for Inorganic
+                    Chemistry
+                  </li>
+                  <li>
+                    Modern Approach to Chemical Calculations by RC Mukherjee
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item syllabus1">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree"
+              >
+                Best Books for JEE Maths
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingThree"
+            >
+              <div class="accordion-body">
+                <ul id="mb" class="hidden">
+                  <li>Cengage Maths by G TIWANI</li>
+                  <li>Comprehensive Mathematics for JEE Advanced by Tata</li>
+                  <li>McGraw Hill publications</li>
+                  <li>Problems Plus in IIT Mathematics by A Das Gupta</li>
+                  <li>
+                    Arihant Problem Book in Mathematics for IIT JEE by SK Goyal
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

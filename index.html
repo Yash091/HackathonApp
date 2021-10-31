@@ -1,0 +1,379 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Fruktur|Sofia|Trirong"
+    />
+
+    <style>
+      .navbar {
+        background-color: rgba(20, 20, 19, 0.979);
+        color: black;
+        -webkit-box-shadow: inset -1px 3px 8px 5px #242629,
+          2px 5px 16px 0px #292e35, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+        box-shadow: inset -1px 3px 8px 5px #2a2e33, 2px 5px 16px 0px #0e1a27,
+          5px 5px 15px 5px rgba(0, 0, 0, 0);
+        letter-spacing: 1px;
+      }
+      .navbar span {
+        padding-left: 6%;
+        font-weight: 800;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      .home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        background: url(./images/home-bg.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+        text-align: center;
+        height: 600px;
+      }
+
+      .home h1 {
+        font-size: 4.6vw;
+        color: #666;
+      }
+
+      .home p {
+        font-size: 2.6vw;
+        color: #999;
+        width: 100%;
+        padding-left: 15%;
+        padding-right: 15%;
+      }
+
+      .home .shape {
+        position: absolute;
+        bottom: -1rem;
+        left: 0;
+        height: 10rem;
+        width: 100%;
+        background: url(../images/shape.png);
+        /* block-size: 100rem 15rem; */
+        filter: drop-shadow(0 -0.1rem 0.1rem rgba(0, 0, 0, 0.2));
+        animation: animate 10s linear infinite;
+      }
+
+      @keyframes animate {
+        0% {
+          background-position-x: 0rem;
+        }
+
+        100% {
+          background-position-x: 100rem;
+        }
+      }
+      .btnin {
+        background-color:  #3B6780;
+;
+        color: white;
+        
+        border-radius: 10px;
+        border-color: #3B6780;
+      }
+     
+      .btnup {
+        background-color:white;
+        color:#3B6780;
+        border-radius: 10px;
+      }
+     
+
+      #exampleInputEmail1 {
+        color: black;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: 100;
+      }
+
+      #e1 {
+        border: 1px solid black;
+        margin: 0;
+        padding: 2px;
+        font-size: small;
+    
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      #ep1 {
+        border: 1px solid black;
+        margin: 0;
+        padding: 2px;
+        font-size: small;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .form-group {
+        background-color: white;
+        
+        font-family: Roboto;
+
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .crd-title {
+        color: #3A6D89;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .hidden {
+        display: none;
+      }
+      .entr_btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 4%;
+        margin-bottom: 4%;
+      }
+      .enter {
+        color: white;
+        width: 25%;
+        height: 6%;
+        text-align: center;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        letter-spacing: 0.7px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid xx">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="/study.png"
+            alt=""
+            width="50px"
+            height="50px"
+            class="d-inline-block align-text-top"
+          />
+          <span class="appname">JEE Guide</span></a
+        >
+        <!-- <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="jee.html">Jee</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="predictor.html">Rank Predictor</a>
+            </li> -->
+
+            <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#news">NEWS</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li> -->
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li> -->
+          <!-- </ul> -->
+          <!-- <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+    <section class="home" id="home">
+      <h1>IIT-JEE Preparation</h1>
+      <p>
+        What is JEE Main exam for? The JEE-Main, which replaces AIEEE, is for
+        admission to the National Institutes of Technology (NITs), Indian
+        Institutes of Information Technology (IIITs), and some other colleges
+        designated as "centrally funded technical institutes" (CFTIs).
+      </p>
+      <!-- <a href="#"><button class="btn">get started</button></a> -->
+
+      <div class="shape"></div>
+    </section>
+    <div
+      class="card crd"
+      style="width: 18rem; border: 1.5px solid grey; margin: auto"
+    >
+      <img
+        class="card-img-top"
+        src="how-to-crack-iit-jee.jpg"
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <h5
+          class="card-title crd-title"
+          
+        >
+          Sign In & Stay Updated
+        </h5>
+        <form>
+          <div class="form-group">
+            <label for="e1">Email id</label>
+            <br />
+            <input
+              type="email"
+              class="email form-control"
+              id="e1"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="ep1">Password</label>
+            <br />
+            <input
+              type="password"
+              class="password form-control"
+              id="ep1"
+              placeholder="Password"
+            />
+          </div>
+          <div class="form-group form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+              required
+            />
+            <label class="form-check-label" for="exampleCheck1">I agree</label>
+          </div>
+          <button type="signin" class="signin btn btnin btn-primary">
+            Sign In
+          </button>
+          <button type="signup" class="signup btn btnup btn-primary">
+            Sign Up
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- <a href="home.html"><button class="enter">Click to Enter</button></a> -->
+    <div class="entr_btn">
+      <a class="btn btn-primary enter hidden" href="home.html" role="button"
+        >Click to Enter</a
+      >
+    </div>
+    <!-- <div class="more hidden">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque
+      earum sed excepturi, cumque est rerum asperiores fuga blanditiis at
+      consequuntur, magnam illo repellendus architecto vero, quae consectetur
+      voluptas sapiente!
+    </div> -->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js";
+      import {
+        getAuth,
+        createUserWithEmailAndPassword,
+        signInWithEmailAndPassword,
+      } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-auth.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBARl3VX18AZXdm4KrznZu771ffeHjFw2M",
+        authDomain: "form-a503a.firebaseapp.com",
+        projectId: "form-a503a",
+        storageBucket: "form-a503a.appspot.com",
+        messagingSenderId: "193146422864",
+        appId: "1:193146422864:web:15e6b04785904b7373b355",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth(app);
+      const signup = document.querySelector(".signup");
+      const signin = document.querySelector(".signin");
+      const enter = document.querySelector(".enter");
+      const card = document.querySelector(".crd");
+      signup.addEventListener("click", function (e) {
+        e.preventDefault();
+        const email = document.querySelector(".email").value;
+        const password = document.querySelector(".password").value;
+        createUserWithEmailAndPassword(auth, email, password)
+          .then((userCredential) => {
+            console.log(userCredential);
+            const user = userCredential.user;
+            console.log("created");
+
+            alert("You are Signed Up. Now, Sign in to enter");
+            location.reload(true)
+            
+            // ...
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            alert("Id already exists or you have entered invalid id/password");
+            // ..
+          });
+      });
+
+      signin.addEventListener("click", function (e) {
+        e.preventDefault();
+        const email = document.querySelector(".email").value;
+        const password = document.querySelector(".password").value;
+        signInWithEmailAndPassword(auth, email, password)
+          .then((userCredential) => {
+            // Signed in
+            const user = userCredential.user;
+            console.log("signed in");
+            enter.classList.remove("hidden");
+            card.classList.add("hidden");
+
+            // ...
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            alert("User not found. Check your id/password.");
+          });
+      });
+    </script>
+  </body>
+</html>
